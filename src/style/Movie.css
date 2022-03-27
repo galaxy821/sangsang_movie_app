@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+.homeContent .rankBox .boxInner .movieBox .movie_item {
+  position: relative;
+  width: 18%;
+  height: min-content;
+  margin: 1% 2%;
+  padding: 0px;
+}
+
+.homeContent .rankBox .boxInner .movie_item .movie_img {
+  margin-left: 80px;
+  border-radius: 5px;
+  width: 220px;
+  box-shadow: 10px 10px 5px black;
+  transition: all 1s;
+}
+
+.homeContent .rankBox .boxInner .movie_item:hover .movie_img {
+  filter: opacity(0.5);
+}
+
+.homeContent .rankBox .boxInner .movie_item .movie_rankup {
+  position: relative;
+}
+
+.homeContent .rankBox .boxInner .movie_item .movie_rankup > p {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-family: "Do Hyeon", sans-serif;
+  color: white;
+  font-size: 100px;
+  font-style: italic;
+  text-shadow: 5px 5px 3px black;
+}
+
+.homeContent .rankBox .boxInner .movie_item .movieTitle {
+  position: relative;
+  text-align: center;
+}
+
+.homeContent .rankBox .boxInner .movie_item .movieTitle > p {
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+  width: 220px;
+  text-decoration: none;
+  color: white;
+  left: 70px;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.homeContent .rankBox .boxInner .movie_item:hover .movieTitle > p {
+  opacity: 1;
+  transform: translateY(-200px);
+}
